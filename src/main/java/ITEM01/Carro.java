@@ -18,6 +18,7 @@ public class Carro {
         this.categoria = categoria;
     }
 
+
     /**
      * Método estático de fábrica básico
      * Vantagem 1: Tem nome descritivo, ao contrário dos construtores

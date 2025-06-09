@@ -1,3 +1,5 @@
+import ITEM02.Pizza;
+
 public class Main {
     public static void main(String[] args) {
         // Criando uma instância de Pessoa usando o construtor
@@ -11,5 +13,12 @@ public class Main {
         // Acessando os atributos usando os métodos getters
         System.out.println("Nome: " + pessoa1.getNome());
         System.out.println("Idade: " + pessoa2.getNome());
+
+        Pizza pizza = new Pizza.Builder(12)
+                .cheese(true)
+                .bacon(true)
+                .build();
+
+        System.out.println("Pizza size: " + pizza.getSize());
     }
 }
